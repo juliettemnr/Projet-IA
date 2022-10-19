@@ -61,8 +61,11 @@ namespace ProjetIA2022
 
         public override double CalculeHCost()
         {
-            return( 0 );
-           
+
+            double distX = Math.Abs(x - Form1.xfinal);
+            double distY = Math.Abs(y - Form1.yfinal);
+
+            return distX + distY;
         }
 
         public override string ToString()
