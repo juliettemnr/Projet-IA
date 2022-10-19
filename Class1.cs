@@ -61,7 +61,19 @@ namespace ProjetIA2022
 
         public override double CalculeHCost()
         {
-            return( 0 );
+            
+            int P1_X = Form1.xfinal;
+            int P1_Y = Form1.yfinal;
+            int P2_X = x;
+            int P2_Y = y;
+            double distX = (P2_X - P1_X);
+            double distY = (P2_Y - P1_Y);
+
+            double dist_eucl = Math.Sqrt(Math.Pow(distX,2) + Math.Pow(distY, 2));
+
+
+
+            return ( dist_eucl );
            
         }
 
